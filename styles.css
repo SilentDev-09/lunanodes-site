@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2c2c2c; /* Dark gray */
+  color: #ffffff; /* White text */
+  font-weight: bold; /* Make all text bold */
+}
+
+header {
+  background-color: #3e3e3e; /* Black */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 120px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #9b59b6; /* Violet */
+}
+
+#hero {
+  background-color: #6a5acd; /* Purple */
+  color: white;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+
+#hero h1 {
+  animation: fadeIn 2s;
+}
+
+#hero p {
+  animation: fadeIn 2s 0.5s;
+}
+
+.button, .discord-button {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: transform 0.2s;
+  font-weight: bold; /* Ensure button text is bold */
+}
+
+.button img, .discord-button img {
+  vertical-align: middle;
+  margin-right: 8px;
+  height: 20px; /* Icon size */
+}
+
+.button:hover, .discord-button:hover {
+  transform: scale(1.05);
+}
+
+section {
+  padding: 40px;
+  border-bottom: 1px solid #444; /* Separator line between sections */
+}
+
+footer {
+  background-color: #3e3e3e; /* Black */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.service-container {
+  background-color: #4a4a4a; /* Darker gray for contrast */
+  color: white;
+  padding: 20px;
+  margin: 15px 0; /* Space between containers */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.service-container:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.service-container h3 {
+  margin: 0; /* Remove default margin */
+}
+
+.service-container p {
+  font-size: 1.2em; /* Slightly larger price text */
+  font-weight: bold; /* Bold price text */
+}
+
